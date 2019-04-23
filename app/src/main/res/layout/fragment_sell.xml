@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.sell.SellFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            app:fontFamily="@font/baloo"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/please_sell_your_plant" />
+
+        <EditText
+            android:id="@+id/edt_nama_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPersonName"
+            android:hint="@string/type_your_name_plant"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/edt_jenis_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPersonName"
+            android:hint="@string/type_your_kind_of_plant"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/edt_stock_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/type_your_stock_of_plant"
+            android:inputType="number"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/edt_kondisi_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPersonName"
+            android:hint="@string/type_your_plant_condition"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/edt_harga_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:ems="10"
+            android:hint="@string/type_your_price_of_plant"
+            android:inputType="number"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/edt_terjual_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/type_your_sold_of_plant"
+            android:inputType="number"
+            tools:targetApi="jelly_bean" />
+
+        <ImageView
+            android:id="@+id/img_sell"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic[14]" />
+
+        <Button
+            android:id="@+id/btn_upload_sell"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/baloo"
+            android:textColor="#fff"
+            android:background="@drawable/radius_button"
+            android:text="@string/upload_image" />
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"
+            app:fontFamily="@font/baloo"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_button"
+            android:text="@string/sell" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

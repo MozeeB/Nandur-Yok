@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Username   :" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Alamat        :" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Email           :" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Phone          :" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nama_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="20dp"
+                    android:text="@string/mujiburrohman"
+                    android:textSize="20sp"
+                    tools:targetApi="jelly_bean"
+                    android:paddingStart="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_username_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="20dp"
+                    android:text="@string/mujib"
+                    android:textSize="20sp"
+                    tools:targetApi="jelly_bean"
+                    android:paddingStart="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_alamat_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="20dp"
+                    android:text="@string/jepara_jawa_tengah"
+                    android:textSize="20sp"
+                    tools:targetApi="jelly_bean"
+                    android:paddingStart="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_email_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/mujiburr741_gmail_com"
+                    android:textSize="20sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/tv_phone_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="20dp"
+                    android:text="@string/_085225156657"
+                    tools:targetApi="jelly_bean"
+                    android:paddingStart="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="377dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="67dp"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:background="@drawable/radius_button"
+            android:text="@string/log_out"
+            app:fontFamily="@font/baloo"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
