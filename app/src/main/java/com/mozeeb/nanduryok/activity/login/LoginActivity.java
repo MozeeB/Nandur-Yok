@@ -24,6 +24,7 @@ import es.dmoral.toasty.Toasty;
 
 public class LoginActivity extends AppCompatActivity implements LoginContruct.View{
 
+    //Ini variable nya pakde sih
     private TextView creatAccount;
     private LoginPresenter presenter;
     private EditText username, password;
